@@ -9,4 +9,5 @@ for image_file in image_files:
     image_path = os.path.join(directory, image_file)
     image = Image.open(image_path)
     text = pytesseract.image_to_string(image)
-    print(f"Text extracted from {image_file}:\n\n\n{text}\n\n\n")
+    print(f"Text extracted from {image_file}:\n\n{text}\n\n\n")
+
